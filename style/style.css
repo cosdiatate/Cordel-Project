@@ -10,12 +10,14 @@
 :root {
 --cor0:#C7C5E8;
 --cor1:#3760C0;
---font-title-title:"Passion", sans-serif;
---font-title-standard:"Sriracha", cursive;
+--font-1:Verdana, Geneva, Tahoma, sans-serif;
+--font-2:'Passion', sans-serif;
+--font-3:'Sriracha', cursive;
 }
 html, body {
     min-height: 100%;
     background-color: rgba(71, 71, 71, 0.26);
+    font-family: var(--font-1);
     
 }
 header {
@@ -28,6 +30,8 @@ header h1 {
     padding-top: 50px;
     font-variant: small-caps;
     color: white;
+    font-family:var(--font-2);
+    font-size: 5vw;
 }
 header p {
     padding-bottom: 50px;
@@ -45,13 +49,14 @@ section{
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 1.5em;
-
+    line-height: 2em;
+    font-family: var(--font-3);
+    font-size: 3vw;
 
 }
 section.normal{
     background-color: white;
-
+    
 }
 section.imagem{
     background-color: rgb(68, 68, 68);
@@ -59,7 +64,8 @@ section.imagem{
 }
 section.imagem >p{
     background-color: black;
-    width: 350px;
+    display: inline-block;
+    padding: 5px;
 }
 footer{
     text-align: center;
